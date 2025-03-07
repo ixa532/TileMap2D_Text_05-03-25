@@ -29,6 +29,11 @@ public class Animacao : MonoBehaviour
             animator.SetTrigger("Andar");
             rigidbody.velocity = new Vector2();
         }
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            animator.SetTrigger("Voltar");
+                rigidbody.velocity = new Vector2(-5, 1);
+        }
         if (Input.GetKeyDown(KeyCode.W))
         {
             //mudar
